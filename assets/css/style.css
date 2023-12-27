@@ -27,28 +27,28 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
 }
 
 h1 {
-    margin-bottom: 1rem;
+    margin-bottom: .3rem;
 }
 
 hr {
-    min-width: 90%;
+    min-width: 80%;
 }
 
 div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
+    margin: .8rem;
     border: 2px solid rgb(19, 28, 79);
     border-radius: 1rem;
-    padding: .8rem .4rem;
+    padding: .6rem .4rem;
+    box-shadow: 0 0 .3rem rgb(19, 28, 79);
 }
 
-input[type=number] {
+input[type=number], input[type=text] {
     width: 15rem;
     background: rgb(19, 28, 79);
     outline: none;
@@ -58,6 +58,7 @@ input[type=number] {
     padding: .8rem .4rem;
     color: white;
     margin-right: 1rem;
+    text-align: center;
 }
 
 select {
@@ -87,6 +88,12 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .output {
-    border: 3px solid white;
-    margin: 2rem 1rem;
+    border: 2px solid white;
+    box-shadow: 0 0 .3rem white;
+    margin: 3rem 1rem 2rem;
+}
+
+p {
+    font-size: .7rem;
+    color: grey;
 }
