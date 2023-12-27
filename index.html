@@ -8,18 +8,20 @@
 </head>
 <body>
     <main>
+        <h1>Calory Calculator</h1>
+        <hr>
         <form>
             <div>
                 <label for="weight">Weight</label>
-                <input type="number" name="weight" id="weight">
+                <input type="number" name="weight" id="weight" placeholder="weight in kg">
             </div>
             <div>
                 <label for="height">Height</label>
-                <input type="number" name="height" id="height">
+                <input type="number" name="height" id="height" placeholder="height in cm">
             </div>
             <div>
                 <label for="age">Age</label>
-                <input type="number" name="age" id="age">
+                <input type="number" name="age" id="age" placeholder="age in years">
             </div>
             <div>
                 <label for="sex">Sex</label>
@@ -28,9 +30,9 @@
                     <option value="female">Female</option>
                 </select>
             </div>
-            <div>
+            <div class="output">
                 <label for="bmr">BMR</label>
-                <input type="number" name="bmr" id="bmr">
+                <input type="number" name="bmr" id="bmr" placeholder="calory needs without sports">
             </div>
             <div>
                 <label for="pal">PAL</label>
@@ -42,11 +44,12 @@
                     <option value="pro">Athlete</option>
                 </select>
             </div>
-            <div>
+            <div class="output">
                 <label for="tee">Total energy expenditure</label>
-                <input type="number" name="tee" id="tee">
+                <input type="number" name="tee" id="tee" placeholder="calory needs with sport">
             </div>
         </form>
+        <p> calculation based on Harris-Benedict formula</p>
     </main>
     <script src="./assets/javascript/main.js"></script>
 </body>

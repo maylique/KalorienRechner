@@ -9,7 +9,7 @@ const form = document.querySelector('form')
 
 const bmrCalc = () => {
     if (sex.value == 'male') {
-        sum = 66.5 + (13.75 * weight.value) + (5.003 * height.value) - (6,75 * age.value)
+        sum = 66.5 + (13.75 * weight.value) + (5.003 * height.value) - (6.75 * age.value)
         bmr.value = Math.round(sum)
     } else {
         sum = 655.1 + (9.563 * weight.value) + (1.850 * height.value) - (4.676 * age.value)

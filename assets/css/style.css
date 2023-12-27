@@ -20,12 +20,73 @@ body {
 }
 
 main {
-    background-color: blueviolet;
+    background-color: rgb(12, 12, 51);
     border-radius: 1rem;
-    box-shadow: 0 0 5rem blueviolet;
+    box-shadow: 0 0 10rem rgb(4, 25, 88);
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
 }
 
+h1 {
+    margin-bottom: 1rem;
+}
+
+hr {
+    min-width: 90%;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    border: 2px solid rgb(19, 28, 79);
+    border-radius: 1rem;
+    padding: .8rem .4rem;
+}
+
+input[type=number] {
+    width: 15rem;
+    background: rgb(19, 28, 79);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    padding: .8rem .4rem;
+    color: white;
+    margin-right: 1rem;
+}
+
+select {
+    width: 15rem;
+    background: rgb(19, 28, 79);
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
+    padding: .8rem .4rem;
+    font-size: .8rem;
+    margin-right: 1rem;
+}
+
+label {
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    display: none;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.output {
+    border: 3px solid white;
+    margin: 2rem 1rem;
+}
